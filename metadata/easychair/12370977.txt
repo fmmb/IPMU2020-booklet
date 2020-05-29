@@ -1,0 +1,12 @@
+LNCS Volume: 1237
+Paper: Learning Tversky Similarity
+Pages: 977-988
+Command to create document: pdflatex tversky-final.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Javad | Rahnama
+Eyke | Hüllermeier
+----------------------------------------------------------------

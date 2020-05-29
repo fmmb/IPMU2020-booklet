@@ -1,0 +1,13 @@
+LNCS Volume: 1237
+Paper: Two dualities for weakly pseudo-complemented quasi-Kleene algebras
+Pages: 2095-2114
+Command to create document: pdflatex duality_wpqk(R-2).tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Umberto | Rivieccio
+Ramon | Jansana
+Thiago N. | Silva
+----------------------------------------------------------------

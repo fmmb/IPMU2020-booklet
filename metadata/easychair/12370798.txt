@@ -1,0 +1,13 @@
+LNCS Volume: 1237
+Paper: Binary Credal Classification under Sparsity Constraints
+Pages: 798-811
+Command to create document: pdflatex basu20a.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Tathagata | Basu
+Matthias | Troffaes
+Jochen | Einbeck
+----------------------------------------------------------------

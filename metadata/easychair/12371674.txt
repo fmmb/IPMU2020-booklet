@@ -1,0 +1,15 @@
+LNCS Volume: 1237
+Paper: Interactive Fuzzy Fractional Differential Equation: Application on HIV Dynamics
+Pages: 1674-1687
+Command to create document: pdflatex LinearfractionaldifferentialequationviaLinearcorrelation(v3).tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Vinícius | Wasques
+Beatriz | Laiate
+Francielle | Santo Pedro
+Estevão | Esmi
+Laécio C. | Barros
+----------------------------------------------------------------

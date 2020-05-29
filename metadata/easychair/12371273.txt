@@ -1,0 +1,12 @@
+LNCS Volume: 1237
+Paper: A S-QFD Approach with Bipolar Fuzzy Hamacher Aggregation Operators and Its Application on E-Commerce
+Pages: 1273-1283
+Microsoft Word file: 
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Esra | Çakir
+Ziya | Ulukan
+----------------------------------------------------------------

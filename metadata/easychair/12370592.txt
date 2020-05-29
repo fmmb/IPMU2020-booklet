@@ -1,0 +1,13 @@
+LNCS Volume: 1237
+Paper: Dempster-Shafer Parzen-Rosenblatt Hidden Markov Fields for Multichannel Image Segmentation
+Pages: 592-603
+Command to create document: pdflatex IPMU59.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Mohamed El Yazid | Boudaren
+Ali | Hamache
+Islam | Debicha
+----------------------------------------------------------------

@@ -1,0 +1,15 @@
+LNCS Volume: 1237
+Paper: Dynamic pricing using Thompson Sampling with fuzzy events
+Pages: 630-643
+Command to create document: pdflatex ipmu.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Jason | Rhuggenaath
+Paulo Roberto | de Oliveira da Costa
+Yingqian | Zhang
+Alp | Akcay
+Uzay | Kaymak
+----------------------------------------------------------------

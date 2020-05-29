@@ -1,0 +1,15 @@
+LNCS Volume: 1237
+Paper: Transparency of classification systems for clinical decision support
+Pages: 1581-1594
+Command to create document: pdflatex main.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Antoine | Richard
+Brice | Mayag
+François | Talbot
+Alexis | Tsoukias
+Yves | Meinard
+----------------------------------------------------------------

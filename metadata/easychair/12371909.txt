@@ -1,0 +1,13 @@
+LNCS Volume: 1237
+Paper: Tolerance and control solutions of two-sided interval linear system and their applications
+Pages: 1909-1921
+Command to create document: pdflatex main.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Worrawate | Leela-Apiradee
+Phantipa | Thipwiwatpotjana
+Artur | Gorka
+----------------------------------------------------------------

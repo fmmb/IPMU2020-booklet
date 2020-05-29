@@ -1,0 +1,13 @@
+LNCS Volume: 1237
+Paper: Is the invariance with respect to powers of a t-norm a restrictive property on fuzzy implication functions? The case of strict t-norms
+Pages: 1447-1460
+Command to create document: pdflatex ipmu2020.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Raquel | Fernandez-Peralta
+Sebastia | Massanet
+Arnau | Mir
+----------------------------------------------------------------

@@ -1,0 +1,15 @@
+LNCS Volume: 1237
+Paper: Data-Driven Classifiers for Predicting Grass Growth in Northern Ireland: A Case Study 
+Pages: 291-303
+Microsoft Word file: 
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Orla | McHugh
+Jun | Liu
+Fiona | Browne
+Philip | Jordan
+Deborah | McConnell
+----------------------------------------------------------------

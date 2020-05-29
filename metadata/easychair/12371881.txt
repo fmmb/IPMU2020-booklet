@@ -1,0 +1,12 @@
+LNCS Volume: 1237
+Paper: On Statistics, Probability, and Entropy of Interval-Valued Datasets
+Pages: 1881-1894
+Command to create document: pdflatex IntvDataStatPdfEntropy_published.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Chenyi | Hu
+Zhihui | Hu
+----------------------------------------------------------------

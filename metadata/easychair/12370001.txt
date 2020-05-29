@@ -1,0 +1,14 @@
+LNCS Volume: 1237
+Paper: On Ruspini's models of similarity-based approximate reasoning
+Pages: 1-12
+Command to create document: pdflatex FuzzySimilarity-last-submitted.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Francesc | Esteva
+Lluis | Godo
+Ricardo Oscar | Rodriguez
+Thomas | Vetterlein
+----------------------------------------------------------------

@@ -1,0 +1,19 @@
+LNCS Volume: 1237
+Paper: General grouping functions
+Pages: 1183-1196
+Command to create document: pdflatex 1-GGF.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Helida | Santos
+Graçaliz P. | Dimuro
+Tiago C. | Asmus
+Giancarlo | Lucca
+Eduardo N. | Borges
+Benjamin | Bedregal
+José A. | Sanz
+Javier | Fernández
+Humberto | Bustince
+----------------------------------------------------------------

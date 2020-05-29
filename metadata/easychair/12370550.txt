@@ -1,0 +1,14 @@
+LNCS Volume: 1237
+Paper: Performance and Interpretability in Fuzzy Logic Systems – can we have both?
+Pages: 550-563
+Command to create document: pdflatex main.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Direnc | Pekaslan
+Chao | Chen
+Christian | Wagner
+Jonathan M. | Garibaldi
+----------------------------------------------------------------

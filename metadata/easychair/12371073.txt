@@ -1,0 +1,11 @@
+LNCS Volume: 1237
+Paper: Bayesian smoothing of decision tree soft predictions and evidential evaluation
+Pages: 1073-1086
+Command to create document: pdflatex IPMU2020sutton-charaniReviewed.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Nicolas | Sutton-Charani
+----------------------------------------------------------------

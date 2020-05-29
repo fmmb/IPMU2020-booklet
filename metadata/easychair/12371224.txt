@@ -1,0 +1,14 @@
+LNCS Volume: 1237
+Paper: New Methods for Comparing Interval-Valued Fuzzy Cardinal Numbers
+Pages: 1224-1237
+Command to create document: pdflatex IPMU155.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Barbara | Pękala
+Jarosłąw | Szkoła
+Krzysztof | Dyczkowski
+Tomasz | Piłka
+----------------------------------------------------------------

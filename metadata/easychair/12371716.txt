@@ -1,0 +1,12 @@
+LNCS Volume: 1237
+Paper: Measure of lattice-valued direct $F$-transforms and its topological interpretations
+Pages: 1716-1729
+Command to create document: pdflatex Anand_IPMU.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Anand Pratap | Singh
+Irina | Perfilieva
+----------------------------------------------------------------

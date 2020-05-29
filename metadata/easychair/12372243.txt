@@ -1,0 +1,13 @@
+LNCS Volume: 1237
+Paper: Intelligent Detection of Information Outliers using Linguistic Summaries \\with Non-monotonic Quantifiers
+Pages: 2243-2255
+Command to create document: pdflatex non_monotonicIDA-ver01-02.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Agnieszka | Duraj
+Piotr S. | Szczepaniak
+Łukasz | Chomątek
+----------------------------------------------------------------

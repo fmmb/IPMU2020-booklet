@@ -1,0 +1,36 @@
+\documentclass[../booklet.tex]{subfiles}
+
+\begin{document}
+
+\section[Automatic detection of symmetry in dermoscopic images based on shape and texture. {\it Vincent Toureau, Pedro Bibiloni, Lidia Talavera-Martínez and Manuel González-Hidalgo}]{Automatic detection of symmetry in dermoscopic images based on shape and texture}
+\index[authors]{Toureau, Vincent} \index[authors]{Bibiloni,  Pedro} \index[authors]{Talavera-Martínez,  Lidia} \index[authors]{González-Hidalgo, Manuel}
+
+\begin{center}
+  {\it Vincent Toureau, Pedro Bibiloni, Lidia Talavera-Martínez and Manuel González-Hidalgo}
+\end{center}
+%\begin{minipage}{1\textwidth}
+%\end{minipage}
+
+\vskip 0.8cm
+
+
+% One-liner
+In this paper we present computational methods to detect the symmetry in dermoscopic images of skin lesions.
+% Motivation
+Skin lesions are assessed by dermatologists based on a number of factors.
+In the literature, the asymmetry of lesions appears recurrently since it may indicate irregular growth.
+% What we want
+We aim at developing an automatic algorithm that can detect symmetry in skin lesions, as well as indicating the axes of symmetry.
+% What we accomplish
+We tackle this task based on skin lesions' shape, based on their color and texture, and based on their combination.
+To do so, we consider symmetry axes through the center of mass, random forests classifiers to aggregate across different orientations, and a purposely-built dataset to compare textures that are specific of dermoscopic imagery.
+We obtain 84-88\% accuracy in comparison with samples manually labeled as having either 1-axis symmetry, 2-axes symmetry or as being asymmetric.
+% Final thoughts
+Besides its diagnostic value, the symmetry of a lesion also explains the reasons that might support such diagnosis.
+Our algorithm does so by indicating how many axes of symmetry were found, and by explicitly computing them.
+
+\keywords{dermoscopic images\and skin lesion \and computational methods \and symmetry detection\and shape \and texture \and color\and machine learning \and random forest}
+
+
+
+\end{document}

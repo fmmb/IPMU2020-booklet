@@ -1,0 +1,13 @@
+LNCS Volume: 1237
+Paper: Necessary and possible interaction between criteria in a general Choquet integral model
+Pages: 1160-1169
+Command to create document: pdflatex IPMU.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Paul Alain | Kaldjob Kaldjob
+Brice | Mayag
+Denis | Bouyssou
+----------------------------------------------------------------

@@ -1,0 +1,13 @@
+LNCS Volume: 1237
+Paper: New results in the calculus of fuzzy-valued using mid-point representation
+Pages: 748-761
+Command to create document: pdflatex IPMU-Submission_119.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Luciano | Stefanini
+Laerte | Sorini
+Mina | Shahidi
+----------------------------------------------------------------

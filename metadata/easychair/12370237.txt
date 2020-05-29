@@ -1,0 +1,18 @@
+LNCS Volume: 1237
+Paper: Artificial Bee Colony Algorithm Applied toDynamic Flexible Job Shop Problems
+Pages: 237-250
+Command to create document: latex samplepaper.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Inês | Ferreira
+Bernardo | Firme
+Miguel | Martins
+Tiago | Coito
+Joaquim | Viegas
+João | Figueiredo
+Susana | Vieira
+João | Sousa
+----------------------------------------------------------------

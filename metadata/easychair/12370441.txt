@@ -1,0 +1,13 @@
+LNCS Volume: 1237
+Paper: A Probabilistic Approach for Discovering Daily Human Mobility Patterns with Mobile Data
+Pages: 441-454
+Command to create document: pdflatex main.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Weizhu | Qian
+Fabrice | Lauri
+Franck | Gechter
+----------------------------------------------------------------

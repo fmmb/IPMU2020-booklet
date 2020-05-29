@@ -1,0 +1,12 @@
+LNCS Volume: 1237
+Paper: Competitive online quantile regression
+Pages: 481-494
+Command to create document: latex paper.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Raisa | Dzhamtyrova
+Yuri | Kalnishkan
+----------------------------------------------------------------

@@ -1,0 +1,12 @@
+LNCS Volume: 1237
+Paper: On categories of L-fuzzifying approximation spaces, L-fuzzifying pretopological spaces and L-fuzzifying closure spaces
+Pages: 1702-1715
+Command to create document: pdflatex IPMU_20.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Anand Pratap | Singh
+Irina | Perfilieva
+----------------------------------------------------------------

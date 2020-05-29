@@ -1,0 +1,15 @@
+LNCS Volume: 1237
+Paper: On the Analysis of Illicit Supply Networks using Variable State Resolution-Markov Chains
+Pages: 495-508
+Command to create document: pdflatex main_document_IPMU.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Jorge | González Ordiano
+Lisa | Finn
+Anthony | Winterlich
+Gary | Moloney
+Steven | Simske
+----------------------------------------------------------------

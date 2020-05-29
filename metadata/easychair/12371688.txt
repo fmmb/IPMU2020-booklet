@@ -1,0 +1,14 @@
+LNCS Volume: 1237
+Paper: HIV Dynamics under Antiretroviral Treatment with Interactivity
+Pages: 1688-1701
+Command to create document: pdflatex HIVinteractivity.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Beatriz | Laiate
+Francielle | Santo Pedro
+Estevão | Esmi
+Laécio C. | Barros
+----------------------------------------------------------------

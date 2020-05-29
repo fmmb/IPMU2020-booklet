@@ -1,0 +1,12 @@
+LNCS Volume: 1237
+Paper: On semantic properties of fuzzy quantifiers over fuzzy universes:  restriction and living on
+Pages: 1651-1664
+Command to create document: pdflatex Dvorak_Holcapek_paper176.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Michal | Holcapek
+Antonín | Dvořák
+----------------------------------------------------------------

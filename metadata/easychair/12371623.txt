@@ -1,0 +1,12 @@
+LNCS Volume: 1237
+Paper: Graded cube of opposition with intermediate in fuzzy natural logic
+Pages: 1623-1636
+Command to create document: pdflatex Author_IPMU_Murinova_2020.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Petra | Murinová
+Vilém | Novák
+----------------------------------------------------------------

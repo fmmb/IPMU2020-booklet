@@ -1,0 +1,11 @@
+LNCS Volume: 1237
+Paper: Average Jane, Where Art Thou? - Recent Avenues in Efficient Machine Learning under Subjectivity Uncertainty
+Pages: 47-60
+Command to create document: pdflatex samplepaper.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Björn | Schuller
+----------------------------------------------------------------

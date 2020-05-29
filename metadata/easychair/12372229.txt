@@ -1,0 +1,13 @@
+LNCS Volume: 1237
+Paper: Fast Convergence of Competitive Spiking Neural Networks with Sample-Based Weight Initialization
+Pages: 2229-2242
+Command to create document: pdflatex main.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Paolo Gabriel | Cachi Delgado
+Sebastián | Ventura
+Krzysztof | Cios
+----------------------------------------------------------------

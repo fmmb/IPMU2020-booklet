@@ -1,0 +1,16 @@
+
+Influence maximization is a fundamental problem in several real life applications such as viral marketing, recommendation system, collaboration and social networks.
+Maximizing influence spreading in a given network  aims to find  the initially active vertex set of size $k$ called seed nodes (or initial spreaders \footnote{\textcolor{black}{In this paper, we use seed set and initial spreaders interchangeably.}})
+which maximizes the expected number of the infected vertices.
+The state-of-the-art local-based techniques developed to solve this problem are based  on  local  structure  information  such  as  degree  centrality, nodes clustering  coefficient, and  others  utilize the whole  network  structure, such  as $k$-core decomposition, and node betweeness.
+In this paper, we aim at solving the problem of influence maximization using maximal clique problem.
+Our intuition is based on the fact that the presence
+of  a  dense  neighborhood  around  a  node  is  fundamental  to  the  maximization
+of influence.
+Our approach follows the following three steps: (1) discovering all the maximal cliques from the complex network; (2) filtering the set of maximal cliques; we then denote the vertices belonging to the rest of maximal cliques as superordinate vertices, and (3) ranking the superordinate nodes according to some indicators.
+%considering both distance between potential spreaders and local structure of each node in the network.  We first show how the problem of influence maximization  may be represented using propositional formulas, and hence solved using SAT-solver technology. By making use of SAT-solver technology which offer a better trade-off between expressivity, flexibility,and scalability we are able to find the best $k$ nodes that maximize influence inside a given network. Then, using SAT-solver technology we are able to incorporate node importance in our model since in real-life networks some vertices are more important than others.
+We evaluate the proposed framework empirically against several high-performing methods on a number of real-life datasets. The experimental results show that our algorithms outperform existing state-of-the-art
+methods in finding the best initial spreaders  in networks.
+
+\keywords{Influence Maximization  \and Maximal Clique \and Independent Cascade Model.}
+

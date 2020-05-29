@@ -1,0 +1,12 @@
+LNCS Volume: 1237
+Paper: Investigation of Ranking Methods within the Military Value of Information (VoI) Problem Domain
+Pages: 129-142
+Microsoft Word file: 
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Behrooz | Etesamipour
+Robert J. | Hammell II
+----------------------------------------------------------------

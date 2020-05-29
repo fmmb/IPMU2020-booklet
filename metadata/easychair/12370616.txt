@@ -1,0 +1,13 @@
+LNCS Volume: 1237
+Paper: Modeling the Costs of Trade Finance during the Financial Crisis of 2008-2009: An Application of Dynamic Hierarchical Linear Model
+Pages: 616-629
+Microsoft Word file: 
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Shantanu | Mullick
+Ashwin | Malshe
+Nicolas | Glady
+----------------------------------------------------------------

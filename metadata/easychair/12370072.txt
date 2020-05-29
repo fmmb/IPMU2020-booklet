@@ -1,0 +1,14 @@
+LNCS Volume: 1237
+Paper: Which Distributions (or Families of Distributions) Best Represent Interval Uncertainty: Case of Permutation-Invariant Criteria
+Pages: 72-81
+Command to create document: pdflatex tr19-112a.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Michael | Beer
+Julio | Urenda
+Olga | Kosheleva
+Vladik | Kreinovich
+----------------------------------------------------------------

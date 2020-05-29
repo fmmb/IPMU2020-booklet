@@ -1,0 +1,18 @@
+\documentclass[../booklet.tex]{subfiles}
+
+\begin{document}
+
+\section[__TITLE__. {\it __AUTHORS__}]{__TITLE__}
+__INDEXINFO__
+
+\begin{center}
+  {\it __AUTHORS__}
+\end{center}
+%\begin{minipage}{1\textwidth}
+%\end{minipage}
+
+\vskip 0.8cm
+
+__ABSTRACT__
+
+\end{document}

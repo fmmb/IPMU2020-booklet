@@ -1,0 +1,14 @@
+LNCS Volume: 1237
+Paper: Combining Multi-Agent Systems and Subjective Logic to Develop Decision Support Systems
+Pages: 143-156
+Command to create document: pdflatex Combining_Multi-Agent_Systems_and_Subjective_Logic_to_Develop_Decision_Support_Systems.tex
+----------------------------------------------------------------
+Authors first and last names as stored in EasyChair (there is no 
+guarantee that these names coincide with the names in paper)
+in the form first name | last name:
+
+Cesar | Gonzalez Fernandez
+Javier | Cabezas Givica
+Alberto | Fernandez
+Isaac | Martin de Diego
+----------------------------------------------------------------
