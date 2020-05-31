@@ -2,7 +2,7 @@
 
 \begin{document}
 
-\section[__TITLE__. {\it __AUTHORS__}]{__TITLE__}
+\subsection[__TITLE__. {\it __AUTHORS__}]{__TITLE__}
 __INDEXINFO__
 
 \begin{center}

@@ -16,7 +16,7 @@
 \usepackage{color}
 \definecolor{mygray}{gray}{0.75}
 \definecolor{dkblue}{rgb}{0,0,0.4}
-\usepackage{xcolor}
+\usepackage[table]{xcolor}
 
 \usepackage{imakeidx}
 \usepackage{hyperref}
@@ -48,9 +48,20 @@
 \providecommand{\tightlist}{%
 	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-\setcounter{secnumdepth}{0}
-\setcounter{tocdepth}{3}
+% Table of Contents format
+\usepackage{tocloft}
+\cftsetindents{section}{1em}{2em}
+\cftsetindents{subsection}{2em}{1em}
+\renewcommand\cftchapfont{\sffamily\bfseries}
+\renewcommand\cftsecfont{\bfseries}
+%\renewcommand\cftchapafterpnum{\par\addvspace{4pt}}
+\renewcommand\cftsecafterpnum{\par\addvspace{3pt}}
+\setlength{\cftbeforesecskip}{6pt}
 
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{2}
+
+% Chapter and Section formats 
 \usepackage{titlesec}
 
 %\titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}   
@@ -58,17 +69,27 @@
 % \titleformat{\chapter}[display]{\normalfont\bfseries}{}{0pt}{\Large}
 
 %\titleformat{\section}[block]{\Large\bfseries}{}{0pt}{\\}[\vspace{2pt}]
-\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
+%\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
+\titleformat{\subsection}[block]{\Large\bfseries\filcenter}{}{1em}{}
 
 \newcommand{\colorsection}[1]{%
-  \colorbox{blue!15}{\parbox[b][2.5cm]{\dimexpr\textwidth-2\fboxsep}{\begin{flushright}#1\end{flushright}\vspace{6pt}}}}
+  \colorbox{black!15}{\parbox[c][1.5cm]{\dimexpr\textwidth-2\fboxsep}{\begin{center}#1\end{center}}}}
 
-\titleformat{name=\chapter}[block]{\sffamily\bfseries\Large}{}{0pt}{\colorsection}  
-\titlespacing*{\chapter}{0pt}{\baselineskip}{40pt}
+\titleformat{name=\section}[block]{\sffamily\bfseries\Large}{}{0pt}{\colorsection}  
+
+\newcommand{\mysection}[2]{%
+	\hypertarget{#2}{}\section{#1}\label{#2}
+}
+
+%\newcommand{\colorchapter}[1]{%
+%  \colorbox{blue!15}{\parbox[b][2.5cm]{\dimexpr\textwidth-2\fboxsep}{\begin{flushright}#1\end{flushright}\vspace{6pt}}}}
+
+%\titleformat{name=\chapter}[block]{\sffamily\bfseries\Large}{}{0pt}{\colorchapter}  
+%\titlespacing*{\chapter}{0pt}{\baselineskip}{40pt}
 
 \newcommand{\mychapter}[1]{
-	\chapter*{#1}
     	\phantomsection
+	\chapter*{#1}
 	\addcontentsline{toc}{chapter}{#1}
 	\markboth{#1}{#1}%
 }
@@ -76,6 +97,36 @@
 \usepackage{array}
 \providecommand{\tabularnewline}{\\}
 
+\newenvironment{lyxlist}[1]
+	{\begin{list}{}
+		{\settowidth{\labelwidth}{#1}
+		 \setlength{\leftmargin}{\labelwidth}
+		 \addtolength{\leftmargin}{\labelsep}
+		 \renewcommand{\makelabel}[1]{##1\hfil}}}
+	{\end{list}}
+	
+\newenvironment{parallelsection}[5]{ % {sessionID}{S1text}{S2text}{S3text}{S4text} 
+    \noindent\begin{minipage}[t]{1\columnwidth}%
+    \begin{flushright}
+    \small%
+    \begin{tabular}{|>{\centering}p{0.2\columnwidth}|>{\centering}p{0.2\columnwidth}|>{\centering}p{0.2\columnwidth}|>{\centering}p{0.2\columnwidth}|}
+    \hline 
+    \cellcolor{blue!10}\hyperlink{#1A}{#2} & 
+    \cellcolor{green!10}\hyperlink{#1B}{#3} & 
+    \cellcolor{red!10}\hyperlink{#1C}{#4} & 
+    \cellcolor{orange!10}\hyperlink{#1D}{#5}\tabularnewline
+    \cellcolor{blue!15}\emph{Page~\pageref{#1A}} &
+    \cellcolor{green!15}\emph{Page~\pageref{#1B}} & 
+    \cellcolor{red!15}\emph{Page~\pageref{#1C}} & 
+    \cellcolor{orange!15}\emph{Page~\pageref{#1D}}\tabularnewline
+    \hline
+    \end{tabular}
+    \par\end{flushright}%
+    \end{minipage}
+}	
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
 \title{IPMU 2020 \\
 18th International Conference on Information Processing and Management of Uncertainty in Knowledge-Based Systems}
 \author{June 15th – 19th 2020, Lisbon, Portugal}
@@ -97,35 +148,35 @@
 
 \mainmatter
 
-\mychapter{The Organizing Committee}
+\chapter*{The Organizing Committee}
 
-\subsection*{General Chair}
+\subsubsection*{General Chair}
 
 Joao Paulo Carvalho (Portugal)
 
-\subsection*{Program Chairs}
+\subsubsection*{Program Chairs}
 
 Marek Reformat (Canada)\\
 Marie-Jeanne Lesot (France)\\
 Susana Vieira (Portugal)
 
-\subsection*{Publication Chair}
+\subsubsection*{Publication Chair}
 
 Anna Wilbik (Netherlands)
 
-\subsection*{Special Session Chair}
+\subsubsection*{Special Session Chair}
 
 Uzay Kaymak (Netherlands)
 
-\subsection*{Sponsors and Publicity Chair}
+\subsubsection*{Sponsors and Publicity Chair}
 
 João M. C. Sousa (Portugal)
 
-\subsection*{Web Chair}
+\subsubsection*{Web Chair}
 
 Fernando Batista (Portugal)
 
-\subsection*{Executive directors}
+\subsubsection*{Executive directors}
 
 Bernadette BOUCHON-MEUNIER\\
 Ronald R. YAGER
@@ -139,57 +190,100 @@ Ronald R. YAGER
 %\chapter*{Program overview}
 %\addcontentsline{toc}{chapter}{Program overview}
 
-\mychapter{Program overview}
+\mychapter{Program}
 
-\includegraphics[width=1\textwidth]{images/program_overview.pdf}
+%\section{Program overview}
+%\includegraphics[width=1\textwidth]{images/program_overview.pdf}
 
-%\noindent\makebox[\textwidth]{\includegraphics[width=1.25\textwidth,trim=0cm 14cm 0cm 0cm,clip]{images/program_overview.pdf}}
-%\begin{flushright}
-%\includegraphics[width=0.25\textwidth,trim=0cm 1cm 1cm 0cm,clip]{figs/qrcode}
-%\end{flushright}
+\subsubsection*{Monday, June 15}
 
-\mychapter{Full Program}
-%\input{misc/program-overview.tex}
+\begin{lyxlist}{00:00 -- 00:00}
+\item [{15:40 -- 16:00}] \textbf{Opening session}
+\item [{16:00 -- 17:00}] \emph{Invited Talk: \hyperlink{talk1}{How Action Shapes Thought} (Barbara Tversky)}
+\item [{17:10 -- 18:50}] Parallel Section 1
+\end{lyxlist}
+\parallelsection{Mo1}{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part I}{Games \& SS18: Discrete Models and Computational Intelligence}{Real World Applications}{Knowledge Processing and Creation}
 
-\section{Thursday, 16}
+\begin{lyxlist}{00:00 -- 00:00}
+\item [{19:10~--~20:30}] Parallel Section 2
+\end{lyxlist}
+\parallelsection{Mo2}{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part II}{XAI \& SS13: Image Understanding and Explainable AI}{SS10: Fuzzy Implication Functions}{SS11: Soft Methods in Statistics and Data Analysis, part I}
 
-\begin{center}
-\resizebox{\textwidth}{!}{%%
-\small
-\begin{tabular}{|c|>{\centering}p{0.2\columnwidth}|>{\centering}p{0.2\columnwidth}|>{\centering}p{0.2\columnwidth}|>{\centering}p{0.2\columnwidth}|}
-\hline 
-14:30 - 15:30 & Image Processing & SS21: Formal Concept Analysis, Rough Sets, General Operators and Related
-Topics, part I & SS9: Computational Intelligence for Logistics and Transportation Problems & SS11: Soft Methods in Statistics and Data Analysis, part II\tabularnewline
-\hline 
-15:40 - 16:00 & \multicolumn{4}{c|}{Homage to Enrique Ruspini}\tabularnewline
-\hline 
-16:00 - 17:00 & \multicolumn{4}{c|}{B. Schuller}\tabularnewline
-\hline 
-17:10 - 18:50 & Decision making, preference \& votes & SS5: Aggregation: Theory and Practice, part I & SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied
-Sciences, part I & SS16: Statistical Image Processing and Analysis, with Applications
-in Neuroimaging\tabularnewline
-\hline 
-19:10 - 20:30 & SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part
-III & SS5: Aggregation: Theory and Practice, part II & Temporal Data Processing & SS20: Mathematical Fuzzy Logic and Graded Reasoning Models, part I\tabularnewline
-\hline 
-\end{tabular}}
-\par\end{center}
+\begin{lyxlist}{00:00 -- 00:00}
+\item [{21:00}] Welcome reception BYOD (bring your own drink)
+\end{lyxlist}
 
-\section{Thursday, 15}
-Invited Talks
-Session PresenterName  PaperTitle Chairman\\
-Session PresenterName  PaperTitle Chairman\\
-Session PresenterName  PaperTitle Chairman\\
-Session PresenterName  PaperTitle Chairman\\
-Session PresenterName  PaperTitle Chairman\\
-Session PresenterName  PaperTitle Chairman\\
-Session PresenterName  PaperTitle Chairman\\
-Session PresenterName  PaperTitle Chairman\\
-Session PresenterName  PaperTitle Chairman\\
-Session PresenterName  PaperTitle Chairman\\
-Session PresenterName  PaperTitle Chairman\\
-Session PresenterName  PaperTitle Chairman\\
-Session PresenterName  PaperTitle Chairman\\
+\vfill
+\pagebreak
+
+\subsubsection*{Tuesday, June 16}
+
+\begin{lyxlist}{00:00 -- 00:00}
+\item [{14:30 -- 15:30}] Parallel Section 1
+\end{lyxlist}
+\parallelsection{Tu1}{Image Processing}{SS21: Formal Concept Analysis, Rough Sets, General Operators and Related Topics, part I}{SS9: Computational Intelligence for Logistics and Transportation Problems}{SS11: Soft Methods in Statistics and Data Analysis, part II}
+
+\begin{lyxlist}{00:00 -- 00:00}
+\item [{15:40 -- 16:00}] \textbf{Homage to Enrique Ruspini}
+\item [{16:00 -- 17:00}] \emph{Invited Talk: \hyperlink{talk2}{Average Jane, Where Art Thou? - Recent Avenues in Efficient Machine Learning under Subjectivity Uncertainty} (Björn Schuller)}
+\item [{17:10 -- 18:50}] Parallel Section 2
+\end{lyxlist}
+\parallelsection{Tu2}{Decision making, preference \& votes}{SS5: Aggregation: Theory and Practice, part I}{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part I}{SS16: Statistical Image Processing and Analysis, with Applications in Neuroimaging}
+
+\begin{lyxlist}{00:00 -- 00:00}
+\item [{17:10 -- 18:50}] Parallel Section 1
+\end{lyxlist}
+\parallelsection{Tu3}{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part III}{SS5: Aggregation: Theory and Practice, part II}{Temporal Data Processing}{SS20: Mathematical Fuzzy Logic and Graded Reasoning Models, part I}
+
+\vfill
+\pagebreak
+
+\subsubsection*{Wednesday June 17}
+
+\begin{lyxlist}{00:00 -- 00:00}
+\item [{14:30 -- 15:30}] Parallel Section 1
+\end{lyxlist}
+\parallelsection{We1}{SS19: Current Techniques to Model, Process and Describe Time Series}{SS21: Formal Concept Analysis, Rough Sets, General Operators and Related Topics, part II}{SS6: Aggregation: Pre-aggregation Functions and other Generalizations of Monotonicity}{SS20: Mathematical Fuzzy Logic and Graded Reasoning Models, part II}
+
+\begin{lyxlist}{00:00 -- 00:00}
+\item [{16:00 -- 17:00}] \emph{Invited Talk: \hyperlink{talk3}{From Eliza to Siri and beyond} (Luísa Coheur)}
+\item [{17:10 -- 18:50}] Parallel Section 2
+\end{lyxlist}
+\parallelsection{We2}{SS7: Aggregation: Aggregation of Different Data Structures}{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part II}{Machine Learning, part I}{Optimization and uncertainty}
+
+\begin{lyxlist}{00:00 -- 00:00}
+\item [{17:10 -- 18:50}] Parallel Section 1
+\end{lyxlist}
+\parallelsection{We3}{SS5: Aggregation: Theory and Practice, part III}{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part III}{Text Analysis and Processing}{SS17: Interval Uncertainty, part I}
+
+
+\vfill
+\pagebreak
+
+\subsubsection*{Thursday, June 18}
+
+\begin{lyxlist}{00:00 -- 00:00}
+\item [{14:30 -- 15:30}] Parallel Section 1
+\end{lyxlist}
+\parallelsection{Th1}{SS8: Fuzzy methods in Data Mining and Knowledge Discovery}{}{SS9: Computational Intelligence for Logistics and Transportation Problems}{SS17: Interval Uncertainty, part II}
+
+\begin{lyxlist}{00:00 -- 00:00}
+\item [{15:40 -- 16:00}] \textbf{Best paper award}
+\item [{16:00 -- 17:00}] \emph{Invited Talk: \hyperlink{talk4}{Keynote Talk: Making Sense out of Activity Sensing in Eldercare} (Jim Keller)}
+\item [{17:10 -- 18:50}] Parallel Section 2
+\end{lyxlist}
+\parallelsection{Th2}{Foundations and Mathematics}{SS3: Similarities in Artificial Intelligence}{Machine Learning, part II}{SS4: Belief Function Theory and its Applications, part I}
+
+\begin{lyxlist}{00:00 -- 00:00}
+\item [{17:10 -- 18:50}] Parallel Section 1
+\end{lyxlist}
+\parallelsection{Th3}{SS1: Fuzzy Interval Analysis}{SS14: Fuzzy and Generalized Quantifier Theory}{SS23: Computational Intelligence Methods in Information Modelling, Representation and Processing}{SS4: Belief Function Theory and its Applications, part II}
+
+
+\vfill
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % E: Even page
 % O: Odd page
@@ -205,266 +299,289 @@ Session PresenterName  PaperTitle Chairman\\
 \fancyhead[RE,LO]{\leftmark}
 \fancyhead[LE,RO]{\thepage}
 
-\mychapter{Invited Talks}{\LARGE \textit{Room ZOOM}}
+\mychapter{Invited Talks}
+\hypertarget{talk1}{}
 \subfile{abstracts/12370026.tex}
 \newpage
+\hypertarget{talk2}{}
 \subfile{abstracts/12370029.tex}
 \newpage
-\subfile{abstracts/12370031.tex}
-\newpage
+\hypertarget{talk3}{}
+%\subfile{abstracts/12370031.tex}
+%\newpage
 \subfile{abstracts/12370032.tex}
 \newpage
-\subfile{abstracts/12370045.tex}
-\newpage
+\hypertarget{talk4}{}
+%\subfile{abstracts/12370045.tex}
+%\newpage
 \subfile{abstracts/12370047.tex}
 
-\mychapter{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part I}{\LARGE \textit{Room ZOOM}}
+\mychapter{Monday, June 15 -- Parallel Session 1}
+
+\mysection{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part I}{Mo1A}
 \subfile{abstracts/12370770.tex}
 \subfile{abstracts/12370784.tex}
 \subfile{abstracts/12370798.tex}
 \subfile{abstracts/12370812.tex}
 \subfile{abstracts/12370826.tex}
 
-\mychapter{Games \& SS18: Discrete Models and Computational Intelligence}
+\mysection{Games \& SS18: Discrete Models and Computational Intelligence}{Mo1B}
 \subfile{abstracts/12370251.tex}
 \subfile{abstracts/12370265.tex}
 \subfile{abstracts/12371977.tex}
 \subfile{abstracts/12371991.tex}
 \subfile{abstracts/12372005.tex}
 
-\mychapter{Real World Applications}
+\mysection{Real World Applications}{Mo1C}
 \subfile{abstracts/12370279.tex}
 \subfile{abstracts/12370291.tex}
 \subfile{abstracts/12370304.tex}
 \subfile{abstracts/12370318.tex}
 \subfile{abstracts/12370332.tex}
 
-\mychapter{Knowledge Processing and Creation}
+\mysection{Knowledge Processing and Creation}{Mo1D}
 \subfile{abstracts/12370346.tex}
 \subfile{abstracts/12370360.tex}
 \subfile{abstracts/12370374.tex}
 \subfile{abstracts/12370388.tex}
 \subfile{abstracts/12370401.tex}
 
-\mychapter{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part II}
+\mychapter{Monday, June 15 -- Parallel Session 2}
+
+\mysection{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part II}{Mo2A}
 \subfile{abstracts/12370838.tex}
 \subfile{abstracts/12370851.tex}
 \subfile{abstracts/12370865.tex}
 \subfile{abstracts/12370879.tex}
-
-\mychapter{XAI \& SS13: Image Understanding and Explainable AI}
+\mysection{XAI \& SS13: Image Understanding and Explainable AI}{Mo2B}
 \subfile{abstracts/12370550.tex}
 \subfile{abstracts/12370564.tex}
 \subfile{abstracts/12371581.tex}
 \subfile{abstracts/12371595.tex}
-
-\mychapter{SS10: Fuzzy Implication Functions}
+\mysection{SS10: Fuzzy Implication Functions}{Mo2C}
 \subfile{abstracts/12371434.tex}
 \subfile{abstracts/12371447.tex}
 \subfile{abstracts/12371461.tex}
 \subfile{abstracts/12371474.tex}
-
-\mychapter{SS11: Soft Methods in Statistics and Data Analysis, part I}
+\mysection{SS11: Soft Methods in Statistics and Data Analysis, part I}{Mo2D}
 \subfile{abstracts/12371488.tex}
 \subfile{abstracts/12371502.tex}
 \subfile{abstracts/12371512.tex}
 \subfile{abstracts/12371526.tex}
 
-\mychapter{Image Processing}
+\mychapter{Tuesday, June 16 -- Parallel Session 1}
+
+\mysection{Image Processing}{Tu1A}
 \subfile{abstracts/12370578.tex}
 \subfile{abstracts/12370592.tex}
 \subfile{abstracts/12370604.tex}
-\mychapter{SS21: Formal Concept Analysis, Rough Sets, General Operators and Related Topics, part I}
+\mysection{SS21: Formal Concept Analysis, Rough Sets, General Operators and Related Topics, part I}{Tu1B}
 \subfile{abstracts/12372155.tex}
 \subfile{abstracts/12372169.tex}
 \subfile{abstracts/12372183.tex}
-\mychapter{SS9: Computational Intelligence for Logistics and Transportation Problems}
+\mysection{SS9: Computational Intelligence for Logistics and Transportation Problems}{Tu1C}
 \subfile{abstracts/12371354.tex}
 \subfile{abstracts/12371368.tex}
 \subfile{abstracts/12371380.tex}
-\mychapter{SS11: Soft Methods in Statistics and Data Analysis, part II}
+\mysection{SS11: Soft Methods in Statistics and Data Analysis, part II}{Tu1D}
 \subfile{abstracts/12371539.tex}
 \subfile{abstracts/12371553.tex}
 \subfile{abstracts/12371567.tex}
 
-\mychapter{Decision making, preference \& votes}
+\mychapter{Tuesday, June 16 -- Parallel Session 2}
+
+\mysection{Decision making, preference \& votes}{Tu2A}
 \subfile{abstracts/12370119.tex}
 \subfile{abstracts/12370129.tex}
 \subfile{abstracts/12370143.tex}
 \subfile{abstracts/12370157.tex}
 \subfile{abstracts/12370171.tex}
-\mychapter{SS5: Aggregation: Theory and Practice, part I}
+\mysection{SS5: Aggregation: Theory and Practice, part I}{Tu2B}
 \subfile{abstracts/12371113.tex}
 \subfile{abstracts/12371121.tex}
 \subfile{abstracts/12371128.tex}
 \subfile{abstracts/12371137.tex}
 \subfile{abstracts/12371149.tex}
-\mychapter{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part I}
+\mysection{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part I}{Tu2C}
 \subfile{abstracts/12371665.tex}
 \subfile{abstracts/12371674.tex}
 \subfile{abstracts/12371688.tex}
 \subfile{abstracts/12371702.tex}
 \subfile{abstracts/12371716.tex}
-\mychapter{SS16: Statistical Image Processing and Analysis, with Applications in Neuroimaging}
+\mysection{SS16: Statistical Image Processing and Analysis, with Applications in Neuroimaging}{Tu2D}
 \subfile{abstracts/12371820.tex}
 \subfile{abstracts/12371831.tex}
 \subfile{abstracts/12371843.tex}
 \subfile{abstracts/12371856.tex}
 \subfile{abstracts/12371867.tex}
 
-\mychapter{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part III}
+\mychapter{Tuesday, June 16 -- Parallel Session 3}
+
+\mysection{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part III}{Tu3A}
 \subfile{abstracts/12370893.tex}
 \subfile{abstracts/12370907.tex}
 \subfile{abstracts/12370921.tex}
 \subfile{abstracts/12370935.tex}
-\mychapter{SS5: Aggregation: Theory and Practice, part II}
+\mysection{SS5: Aggregation: Theory and Practice, part II}{Tu3B}
 \subfile{abstracts/12371160.tex}
 \subfile{abstracts/12371170.tex}
 \subfile{abstracts/12371183.tex}
 \subfile{abstracts/12371197.tex}
-\mychapter{Temporal Data Processing}
+\mysection{Temporal Data Processing}{Tu3C}
 \subfile{abstracts/12370616.tex}
 \subfile{abstracts/12370630.tex}
 \subfile{abstracts/12370644.tex}
 \subfile{abstracts/12370658.tex}
-\mychapter{SS20: Mathematical Fuzzy Logic and Graded Reasoning Models, part I}
+\mysection{SS20: Mathematical Fuzzy Logic and Graded Reasoning Models, part I}{Tu3D}
 \subfile{abstracts/12372055.tex}
 \subfile{abstracts/12372069.tex}
 \subfile{abstracts/12372083.tex}
 \subfile{abstracts/12372095.tex}
 
+\mychapter{Wednesday, June 17 -- Parallel Session 1}
 
-\mychapter{SS19: Current Techniques to Model, Process and Describe Time Series}
+\mysection{SS19: Current Techniques to Model, Process and Describe Time Series}{We1A}
 \subfile{abstracts/12372017.tex}
 \subfile{abstracts/12372031.tex}
 \subfile{abstracts/12372043.tex}
-\mychapter{SS21: Formal Concept Analysis, Rough Sets, General Operators and Related Topics, part II}
+\mysection{SS21: Formal Concept Analysis, Rough Sets, General Operators and Related Topics, part II}{We1B}
 \subfile{abstracts/12372193.tex}
 \subfile{abstracts/12372206.tex}
 \subfile{abstracts/12372217.tex}
-\mychapter{SS6: Aggregation: Pre-aggregation Functions and other Generalizations of Monotonicity}
+\mysection{SS6: Aggregation: Pre-aggregation Functions and other Generalizations of Monotonicity}{We1C}
 \subfile{abstracts/12371250.tex}
 \subfile{abstracts/12371264.tex}
 
-\mychapter{SS20: Mathematical Fuzzy Logic and Graded Reasoning Models, part II}
+\mysection{SS20: Mathematical Fuzzy Logic and Graded Reasoning Models, part II}{We1D}
 \subfile{abstracts/12372115.tex}
 \subfile{abstracts/12372127.tex}
 \subfile{abstracts/12372141.tex}
 
-\mychapter{SS7: Aggregation: Aggregation of Different Data Structures}
+\mychapter{Wednesday, June 17 -- Parallel Session 2}
+
+\mysection{SS7: Aggregation: Aggregation of Different Data Structures}{We2A}
 \subfile{abstracts/12371273.tex}
 \subfile{abstracts/12371284.tex}
 \subfile{abstracts/12371290.tex}
 \subfile{abstracts/12371299.tex}
 
-\mychapter{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part II}
+\mysection{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part II}{We2B}
 \subfile{abstracts/12371730.tex}
 \subfile{abstracts/12371743.tex}
 \subfile{abstracts/12371757.tex}
 \subfile{abstracts/12371771.tex}
 \subfile{abstracts/12371780.tex}
-\mychapter{Machine Learning, part I}
+\mysection{Machine Learning, part I}{We2C}
 \subfile{abstracts/12370415.tex}
 \subfile{abstracts/12370429.tex}
 \subfile{abstracts/12370441.tex}
 \subfile{abstracts/12370455.tex}
 \subfile{abstracts/12370469.tex}
-\mychapter{Optimization and uncertainty}
+\mysection{Optimization and uncertainty}{We2D}
 \subfile{abstracts/12370184.tex}
 \subfile{abstracts/12370198.tex}
 \subfile{abstracts/12370212.tex}
 \subfile{abstracts/12370226.tex}
 \subfile{abstracts/12370237.tex}
 
-\mychapter{SS5: Aggregation: Theory and Practice, part III}
+\mychapter{Wednesday, June 17 -- Parallel Session 3}
+
+\mysection{SS5: Aggregation: Theory and Practice, part III}{We3A}
 \subfile{abstracts/12371211.tex}
 \subfile{abstracts/12371224.tex}
 \subfile{abstracts/12371238.tex}
 
-\mychapter{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part III}
+\mysection{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part III}{We3B}
 \subfile{abstracts/12371794.tex}
 \subfile{abstracts/12371808.tex}
 
 
-\mychapter{Text Analysis and Processing}
+\mysection{Text Analysis and Processing}{We3C}
 \subfile{abstracts/12370671.tex}
 \subfile{abstracts/12370684.tex}
 \subfile{abstracts/12370698.tex}
 \subfile{abstracts/12370710.tex}
-\mychapter{SS17: Interval Uncertainty, part I}
+\mysection{SS17: Interval Uncertainty, part I}{We3D}
 \subfile{abstracts/12371881.tex}
 \subfile{abstracts/12371895.tex}
 \subfile{abstracts/12371936.tex}
 \subfile{abstracts/12371922.tex}
 
 
-\mychapter{SS8: Fuzzy methods in Data Mining and Knowledge Discovery}
+\mychapter{Thursday, June 18 -- Parallel Session 1}
+
+\mysection{SS8: Fuzzy methods in Data Mining and Knowledge Discovery}{Th1A}
 \subfile{abstracts/12371313.tex}
 \subfile{abstracts/12371327.tex}
 \subfile{abstracts/12371341.tex}
-\mychapter{SS9: Computational Intelligence for Logistics and Transportation Problems}
+\mysection{SS9: Computational Intelligence for Logistics and Transportation Problems}{Th1C}
 \subfile{abstracts/12371390.tex}
 \subfile{abstracts/12371406.tex}
 \subfile{abstracts/12371420.tex}
-\mychapter{SS17: Interval Uncertainty, part II}
+\mysection{SS17: Interval Uncertainty, part II}{Th1D}
 \subfile{abstracts/12371909.tex}
 \subfile{abstracts/12371950.tex}
 \subfile{abstracts/12371964.tex}
 
-\mychapter{Foundations and Mathematics}
+
+\mychapter{Thursday, June 18 -- Parallel Session 2}
+
+\mysection{Foundations and Mathematics}{Th2A}
 \subfile{abstracts/12370061.tex}
 \subfile{abstracts/12370072.tex}
 \subfile{abstracts/12370082.tex}
 \subfile{abstracts/12370095.tex}
 \subfile{abstracts/12370109.tex}
-\mychapter{SS3: Similarities in Artificial Intelligence}
+\mysection{SS3: Similarities in Artificial Intelligence}{Th2B}
 \subfile{abstracts/12370001.tex}
 \subfile{abstracts/12370949.tex}
 \subfile{abstracts/12370958.tex}
 \subfile{abstracts/12370966.tex}
 \subfile{abstracts/12370977.tex}
-\mychapter{Machine Learning, part II }
+\mysection{Machine Learning, part II }{Th2C}
 \subfile{abstracts/12370481.tex}
 \subfile{abstracts/12370495.tex}
 \subfile{abstracts/12370509.tex}
 \subfile{abstracts/12370522.tex}
 \subfile{abstracts/12370536.tex}
-\mychapter{SS4: Belief Function Theory and its Applications, part I}
+\mysection{SS4: Belief Function Theory and its Applications, part I}{Th2D}
 \subfile{abstracts/12370989.tex}
 \subfile{abstracts/12371003.tex}
 \subfile{abstracts/12371017.tex}
 \subfile{abstracts/12371031.tex}
 \subfile{abstracts/12371045.tex}
 
-\mychapter{SS1: Fuzzy Interval Analysis}
+
+\mychapter{Thursday, June 18 -- Parallel Session 3}
+
+\mysection{SS1: Fuzzy Interval Analysis}{Th3A}
 \subfile{abstracts/12370724.tex}
 \subfile{abstracts/12370734.tex}
 \subfile{abstracts/12370748.tex}
 \subfile{abstracts/12370762.tex}
-\mychapter{SS14: Fuzzy and Generalized Quantifier Theory}
+\mysection{SS14: Fuzzy and Generalized Quantifier Theory}{Th3B}
 \subfile{abstracts/12371609.tex}
 \subfile{abstracts/12371623.tex}
 \subfile{abstracts/12371637.tex}
 \subfile{abstracts/12371651.tex}
-\mychapter{SS23: Computational Intelligence Methods in Information Modelling, Representation and Processing}
+\mysection{SS23: Computational Intelligence Methods in Information Modelling, Representation and Processing}{Th3C}
 \subfile{abstracts/12372229.tex}
 \subfile{abstracts/12372243.tex}
 \subfile{abstracts/12372256.tex}
 \subfile{abstracts/12372270.tex}
-\mychapter{SS4: Belief Function Theory and its Applications, part II}
+\mysection{SS4: Belief Function Theory and its Applications, part II}{Th3D}
 \subfile{abstracts/12371059.tex}
 \subfile{abstracts/12371073.tex}
 \subfile{abstracts/12371087.tex}
 \subfile{abstracts/12371099.tex}
-
 
 \backmatter
 \printindex[authors]
 
 \clearpage\phantom{}
  \thispagestyle{empty}
-\clearpage\phantom{}
- \thispagestyle{empty}
+%\clearpage\phantom{}
+ %\thispagestyle{empty}
 
 %\includepdf{figs/back_cover.pdf}
 
