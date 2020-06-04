@@ -34,6 +34,7 @@
 \usepackage{amsfonts, amsmath, hanging, parskip, times}
 \usepackage[numbers]{natbib}
 \usepackage[pdftex]{graphicx}
+\usepackage{wrapfig}
 
 \usepackage{pdfpages}
 
@@ -78,7 +79,7 @@
 \titleformat{name=\section}[block]{\sffamily\bfseries\Large}{}{0pt}{\colorsection}  
 
 \newcommand{\mysection}[3]{%
-	\hypertarget{#2}{}\section{#1}\label{#2}
+	\hypertarget{#2}{}\section[#1\\ \normalfont \small \textit{#3}]{#1}\label{#2}
 	\begin{center}#3\end{center}%
 }
 
@@ -95,6 +96,7 @@
 	\markboth{#1}{#1}%
 }
 
+\usepackage{ifthen}
 \usepackage{array}
 \providecommand{\tabularnewline}{\\}
 
@@ -116,10 +118,10 @@
     \cellcolor{green!10}\hyperlink{#1B}{#3} & 
     \cellcolor{red!10}\hyperlink{#1C}{#4} & 
     \cellcolor{orange!10}\hyperlink{#1D}{#5}\tabularnewline
-    \cellcolor{blue!15}\emph{Page~\pageref{#1A}} &
-    \cellcolor{green!15}\emph{Page~\pageref{#1B}} & 
-    \cellcolor{red!15}\emph{Page~\pageref{#1C}} & 
-    \cellcolor{orange!15}\emph{Page~\pageref{#1D}}\tabularnewline
+    \cellcolor{blue!15}\ifthenelse{\equal{#2}{}}{}{\emph{Page~\pageref{#1A}}} &
+    \cellcolor{green!15}\ifthenelse{\equal{#3}{}}{}{\emph{Page~\pageref{#1B}}} & 
+    \cellcolor{red!15}\ifthenelse{\equal{#4}{}}{}{\emph{Page~\pageref{#1C}}} & 
+    \cellcolor{orange!15}\ifthenelse{\equal{#5}{}}{}{\emph{Page~\pageref{#1D}}}\tabularnewline
     \hline
     \end{tabular}
     \par\end{flushright}%
@@ -128,7 +130,7 @@
  
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-\title{IPMU 2020 \\
+\title{\sffamily \textbf{IPMU 2020} \\[1ex]
 18th International Conference on Information Processing and Management of Uncertainty in Knowledge-Based Systems}
 \author{June 15th – 19th 2020, Lisbon, Portugal}
 \date{}
@@ -146,8 +148,6 @@
 \begin{small}
 \tableofcontents
 \end{small}
-
-\mainmatter
 
 \chapter*{The Organizing Committee}
 
@@ -200,7 +200,7 @@ Ronald R. YAGER
 
 \begin{lyxlist}{00:00 -- 00:00}
 \item [{15:40 -- 16:00}] \textbf{Opening session}
-\item [{16:00 -- 17:00}] \emph{Invited Talk: \hyperlink{talk1}{How Action Shapes Thought} (Barbara Tversky)}
+\item [{16:00 -- 17:00}] \textbf{\emph{Invited Talk: \hyperlink{talk1}{How Action Shapes Thought} (Barbara Tversky)}}
 \item [{17:10 -- 18:50}] Parallel Section 1
 \end{lyxlist}
 \parallelsection{Mo1}{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part I}{Games \& SS18: Discrete Models and Computational Intelligence}{Real World Applications}{Knowledge Processing and Creation}
@@ -226,7 +226,7 @@ Ronald R. YAGER
 
 \begin{lyxlist}{00:00 -- 00:00}
 \item [{15:40 -- 16:00}] \textbf{Homage to Enrique Ruspini}
-\item [{16:00 -- 17:00}] \emph{Invited Talk: \hyperlink{talk2}{Average Jane, Where Art Thou? - Recent Avenues in Efficient Machine Learning under Subjectivity Uncertainty} (Björn Schuller)}
+\item [{16:00 -- 17:00}] \textbf{\emph{Invited Talk: \hyperlink{talk2}{Average Jane, Where Art Thou? - Recent Avenues in Efficient Machine Learning under Subjectivity Uncertainty} (Björn Schuller)}}
 \item [{17:10 -- 18:50}] Parallel Section 2
 \end{lyxlist}
 \parallelsection{Tu2}{Decision making, preference \& votes}{SS5: Aggregation: Theory and Practice, part I}{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part I}{SS16: Statistical Image Processing and Analysis, with Applications in Neuroimaging}
@@ -247,7 +247,7 @@ Ronald R. YAGER
 \parallelsection{We1}{SS19: Current Techniques to Model, Process and Describe Time Series}{SS21: Formal Concept Analysis, Rough Sets, General Operators and Related Topics, part II}{SS6: Aggregation: Pre-aggregation Functions and other Generalizations of Monotonicity}{SS20: Mathematical Fuzzy Logic and Graded Reasoning Models, part II}
 
 \begin{lyxlist}{00:00 -- 00:00}
-\item [{16:00 -- 17:00}] \emph{Invited Talk: \hyperlink{talk3}{From Eliza to Siri and beyond} (Luísa Coheur)}
+\item [{16:00 -- 17:00}] \textbf{\emph{Invited Talk: \hyperlink{talk3}{From Eliza to Siri and beyond} (Luísa Coheur)}}
 \item [{17:10 -- 18:50}] Parallel Section 2
 \end{lyxlist}
 \parallelsection{We2}{SS7: Aggregation: Aggregation of Different Data Structures}{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part II}{Machine Learning, part I}{Optimization and uncertainty}
@@ -270,7 +270,7 @@ Ronald R. YAGER
 
 \begin{lyxlist}{00:00 -- 00:00}
 \item [{15:40 -- 16:00}] \textbf{Best paper award}
-\item [{16:00 -- 17:00}] \emph{Invited Talk: \hyperlink{talk4}{Keynote Talk: Making Sense out of Activity Sensing in Eldercare} (Jim Keller)}
+\item [{16:00 -- 17:00}] \emph{\textbf{Invited Talk: \hyperlink{talk4}{Making Sense out of Activity Sensing in Eldercare} (Jim Keller)}}
 \item [{17:10 -- 18:50}] Parallel Section 2
 \end{lyxlist}
 \parallelsection{Th2}{Foundations and Mathematics}{SS3: Similarities in Artificial Intelligence}{Machine Learning, part II}{SS4: Belief Function Theory and its Applications, part I}
@@ -283,6 +283,8 @@ Ronald R. YAGER
 
 \vfill
 \pagebreak
+
+\mainmatter
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -302,20 +304,20 @@ Ronald R. YAGER
 
 \mychapter{Invited Talks}
 \hypertarget{talk1}{}
-\subfile{abstracts/12370026.tex}
+\subfile{misc/invitedtalk1.tex}
 \newpage
 \hypertarget{talk2}{}
-\subfile{abstracts/12370029.tex}
+\subfile{misc/invitedtalk2.tex}
 \newpage
 \hypertarget{talk3}{}
-%\subfile{abstracts/12370031.tex}
-%\newpage
-\subfile{abstracts/12370032.tex}
+\subfile{misc/invitedtalk3.tex}
+% WARNIG: WHERE DO I PUT THIS ?
+%\subfile{abstracts/12370032.tex}
 \newpage
 \hypertarget{talk4}{}
-%\subfile{abstracts/12370045.tex}
-%\newpage
-\subfile{abstracts/12370047.tex}
+\subfile{misc/invitedtalk4.tex}
+% WARNIG: WHERE DO I PUT THIS ?
+%\subfile{abstracts/12370047.tex}
 
 \mychapter{Monday, June 15 -- Parallel Session 1}
 
