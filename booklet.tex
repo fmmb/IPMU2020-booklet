@@ -77,8 +77,9 @@
 
 \titleformat{name=\section}[block]{\sffamily\bfseries\Large}{}{0pt}{\colorsection}  
 
-\newcommand{\mysection}[2]{%
+\newcommand{\mysection}[3]{%
 	\hypertarget{#2}{}\section{#1}\label{#2}
+	\begin{center}#3\end{center}%
 }
 
 %\newcommand{\colorchapter}[1]{%
@@ -318,28 +319,25 @@ Ronald R. YAGER
 
 \mychapter{Monday, June 15 -- Parallel Session 1}
 
-\mysection{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part I}{Mo1A}
+\mysection{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part I}{Mo1A}{Chair: Enrique Miranda}
 \subfile{abstracts/12370770.tex}
 \subfile{abstracts/12370784.tex}
 \subfile{abstracts/12370798.tex}
 \subfile{abstracts/12370812.tex}
 \subfile{abstracts/12370826.tex}
-
-\mysection{Games \& SS18: Discrete Models and Computational Intelligence}{Mo1B}
+\mysection{Games \& SS18: Discrete Models and Computational Intelligence}{Mo1B}{Chair: László Kóczy}
 \subfile{abstracts/12370251.tex}
 \subfile{abstracts/12370265.tex}
 \subfile{abstracts/12371977.tex}
 \subfile{abstracts/12371991.tex}
 \subfile{abstracts/12372005.tex}
-
-\mysection{Real World Applications}{Mo1C}
+\mysection{Real World Applications}{Mo1C}{Chair: Rui Jorge Almeida}
 \subfile{abstracts/12370279.tex}
 \subfile{abstracts/12370291.tex}
 \subfile{abstracts/12370304.tex}
 \subfile{abstracts/12370318.tex}
 \subfile{abstracts/12370332.tex}
-
-\mysection{Knowledge Processing and Creation}{Mo1D}
+\mysection{Knowledge Processing and Creation}{Mo1D}{Chair: Marie-Jeanne Lesot}
 \subfile{abstracts/12370346.tex}
 \subfile{abstracts/12370360.tex}
 \subfile{abstracts/12370374.tex}
@@ -348,160 +346,166 @@ Ronald R. YAGER
 
 \mychapter{Monday, June 15 -- Parallel Session 2}
 
-\mysection{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part II}{Mo2A}
+\mysection{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part II}{Mo2A}{Chair: Ignacio Montes}
 \subfile{abstracts/12370838.tex}
 \subfile{abstracts/12370851.tex}
 \subfile{abstracts/12370865.tex}
 \subfile{abstracts/12370879.tex}
-\mysection{XAI \& SS13: Image Understanding and Explainable AI}{Mo2B}
+\mysection{XAI \& SS13: Image Understanding and Explainable AI}{Mo2B}{Chair: Isabelle Bloch}
 \subfile{abstracts/12370550.tex}
 \subfile{abstracts/12370564.tex}
 \subfile{abstracts/12371581.tex}
 \subfile{abstracts/12371595.tex}
-\mysection{SS10: Fuzzy Implication Functions}{Mo2C}
+\mysection{SS10: Fuzzy Implication Functions}{Mo2C}{Chair: Michal Baczynski}
 \subfile{abstracts/12371434.tex}
 \subfile{abstracts/12371447.tex}
 \subfile{abstracts/12371461.tex}
 \subfile{abstracts/12371474.tex}
-\mysection{SS11: Soft Methods in Statistics and Data Analysis, part I}{Mo2D}
-\subfile{abstracts/12371488.tex}
+\mysection{SS11: Soft Methods in Statistics and Data Analysis, part I}{Mo2D}{Chair: Przemyslaw Grzegorzewski}
+\subfile{abstracts/12371526.tex}
 \subfile{abstracts/12371502.tex}
 \subfile{abstracts/12371512.tex}
-\subfile{abstracts/12371526.tex}
+\subfile{abstracts/12371567.tex}
+
 
 \mychapter{Tuesday, June 16 -- Parallel Session 1}
 
-\mysection{Image Processing}{Tu1A}
+\mysection{Image Processing}{Tu1A}{Chair: Olivier Strauss}
 \subfile{abstracts/12370578.tex}
-\subfile{abstracts/12370592.tex}
 \subfile{abstracts/12370604.tex}
-\mysection{SS21: Formal Concept Analysis, Rough Sets, General Operators and Related Topics, part I}{Tu1B}
+\subfile{abstracts/12370592.tex}
+\mysection{SS21: Formal Concept Analysis, Rough Sets, General Operators and Related Topics, part I}{Tu1B}{Chair: Jesús Medina}
 \subfile{abstracts/12372155.tex}
 \subfile{abstracts/12372169.tex}
 \subfile{abstracts/12372183.tex}
-\mysection{SS9: Computational Intelligence for Logistics and Transportation Problems}{Tu1C}
+\mysection{SS9: Computational Intelligence for Logistics and Transportation Problems, Part I}{Tu1C}{Chair: Belén Melián-Batista}
 \subfile{abstracts/12371354.tex}
 \subfile{abstracts/12371368.tex}
 \subfile{abstracts/12371380.tex}
-\mysection{SS11: Soft Methods in Statistics and Data Analysis, part II}{Tu1D}
+\mysection{SS11: Soft Methods in Statistics and Data Analysis, part II}{Tu1D}{Chair: Przemyslaw Grzegorzewski}
 \subfile{abstracts/12371539.tex}
 \subfile{abstracts/12371553.tex}
-\subfile{abstracts/12371567.tex}
+\subfile{abstracts/12371488.tex}
+
 
 \mychapter{Tuesday, June 16 -- Parallel Session 2}
 
-\mysection{Decision making, preference \& votes}{Tu2A}
+\mysection{Decision making, preference \& votes}{Tu2A}{Chair: Davide Petturiti}
 \subfile{abstracts/12370119.tex}
 \subfile{abstracts/12370129.tex}
 \subfile{abstracts/12370143.tex}
 \subfile{abstracts/12370157.tex}
 \subfile{abstracts/12370171.tex}
-\mysection{SS5: Aggregation: Theory and Practice, part I}{Tu2B}
+\mysection{SS5: Aggregation: Theory and Practice, part I}{Tu2B}{Chair: Radko Mesiar}
 \subfile{abstracts/12371113.tex}
 \subfile{abstracts/12371121.tex}
 \subfile{abstracts/12371128.tex}
 \subfile{abstracts/12371137.tex}
 \subfile{abstracts/12371149.tex}
-\mysection{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part I}{Tu2C}
+\mysection{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part I}{Tu2C}{Chair: Irina Perfilieva}
 \subfile{abstracts/12371665.tex}
 \subfile{abstracts/12371674.tex}
 \subfile{abstracts/12371688.tex}
 \subfile{abstracts/12371702.tex}
 \subfile{abstracts/12371716.tex}
-\mysection{SS16: Statistical Image Processing and Analysis, with Applications in Neuroimaging}{Tu2D}
+\mysection{SS16: Statistical Image Processing and Analysis, with Applications in Neuroimaging}{Tu2D}{Chair: John Kornak}
 \subfile{abstracts/12371820.tex}
 \subfile{abstracts/12371831.tex}
 \subfile{abstracts/12371843.tex}
 \subfile{abstracts/12371856.tex}
 \subfile{abstracts/12371867.tex}
 
+
 \mychapter{Tuesday, June 16 -- Parallel Session 3}
 
-\mysection{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part III}{Tu3A}
+\mysection{SS2: Theoretical and Applied Aspects of Imprecise Probabilities, part III}{Tu3A}{Chair: Enrique Miranda}
 \subfile{abstracts/12370893.tex}
 \subfile{abstracts/12370907.tex}
 \subfile{abstracts/12370921.tex}
 \subfile{abstracts/12370935.tex}
-\mysection{SS5: Aggregation: Theory and Practice, part II}{Tu3B}
+\mysection{SS5: Aggregation: Theory and Practice, part II}{Tu3B}{Chair: Andrea Stupnanova}
 \subfile{abstracts/12371160.tex}
 \subfile{abstracts/12371170.tex}
 \subfile{abstracts/12371183.tex}
 \subfile{abstracts/12371197.tex}
-\mysection{Temporal Data Processing}{Tu3C}
+\mysection{Temporal Data Processing}{Tu3C}{Chair: Rosangela Ballini}
 \subfile{abstracts/12370616.tex}
 \subfile{abstracts/12370630.tex}
 \subfile{abstracts/12370644.tex}
 \subfile{abstracts/12370658.tex}
-\mysection{SS20: Mathematical Fuzzy Logic and Graded Reasoning Models, part I}{Tu3D}
-\subfile{abstracts/12372055.tex}
+\mysection{SS20: Mathematical Fuzzy Logic and Graded Reasoning Models, part I}{Tu3D}{Chair: Tommaso Flaminio}
 \subfile{abstracts/12372069.tex}
 \subfile{abstracts/12372083.tex}
 \subfile{abstracts/12372095.tex}
+\subfile{abstracts/12372055.tex}
+
 
 \mychapter{Wednesday, June 17 -- Parallel Session 1}
 
-\mysection{SS19: Current Techniques to Model, Process and Describe Time Series}{We1A}
+\mysection{SS19: Current Techniques to Model, Process and Describe Time Series}{We1A}{Chair: Luis Rodríguez Benítez}
 \subfile{abstracts/12372017.tex}
 \subfile{abstracts/12372031.tex}
 \subfile{abstracts/12372043.tex}
-\mysection{SS21: Formal Concept Analysis, Rough Sets, General Operators and Related Topics, part II}{We1B}
+\mysection{SS21: Formal Concept Analysis, Rough Sets, General Operators and Related Topics, part II}{We1B}{Chair: María Eugenia Cornejo}
 \subfile{abstracts/12372193.tex}
 \subfile{abstracts/12372206.tex}
 \subfile{abstracts/12372217.tex}
-\mysection{SS6: Aggregation: Pre-aggregation Functions and other Generalizations of Monotonicity}{We1C}
+\mysection{SS6: Aggregation: Pre-aggregation Functions and other Generalizations of Monotonicity}{We1C}{Chair: Graçaliz Di Muro}
 \subfile{abstracts/12371250.tex}
 \subfile{abstracts/12371264.tex}
 
-\mysection{SS20: Mathematical Fuzzy Logic and Graded Reasoning Models, part II}{We1D}
+\mysection{SS20: Mathematical Fuzzy Logic and Graded Reasoning Models, part II}{We1D}{Chair: Vilem Novák}
 \subfile{abstracts/12372115.tex}
 \subfile{abstracts/12372127.tex}
 \subfile{abstracts/12372141.tex}
 
+
 \mychapter{Wednesday, June 17 -- Parallel Session 2}
 
-\mysection{SS7: Aggregation: Aggregation of Different Data Structures}{We2A}
+\mysection{SS7: Aggregation: Aggregation of Different Data Structures}{We2A}{Chair: Raúl Perez Fernandez}
 \subfile{abstracts/12371273.tex}
 \subfile{abstracts/12371284.tex}
 \subfile{abstracts/12371290.tex}
 \subfile{abstracts/12371299.tex}
 
-\mysection{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part II}{We2B}
+\mysection{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part II}{We2B}{Chair: Michal Holcapek}
 \subfile{abstracts/12371730.tex}
 \subfile{abstracts/12371743.tex}
-\subfile{abstracts/12371757.tex}
 \subfile{abstracts/12371771.tex}
 \subfile{abstracts/12371780.tex}
-\mysection{Machine Learning, part I}{We2C}
+\subfile{abstracts/12371757.tex}
+\mysection{Machine Learning, part I}{We2C}{Chair: Christophe Marsala}
 \subfile{abstracts/12370415.tex}
 \subfile{abstracts/12370429.tex}
 \subfile{abstracts/12370441.tex}
 \subfile{abstracts/12370455.tex}
 \subfile{abstracts/12370469.tex}
-\mysection{Optimization and uncertainty}{We2D}
+\mysection{Optimization and uncertainty}{We2D}{Chair: João Sousa}
 \subfile{abstracts/12370184.tex}
 \subfile{abstracts/12370198.tex}
 \subfile{abstracts/12370212.tex}
 \subfile{abstracts/12370226.tex}
 \subfile{abstracts/12370237.tex}
 
+
 \mychapter{Wednesday, June 17 -- Parallel Session 3}
 
-\mysection{SS5: Aggregation: Theory and Practice, part III}{We3A}
+\mysection{SS5: Aggregation: Theory and Practice, part III}{We3A}{Chair: Tomasa Calvo}
 \subfile{abstracts/12371211.tex}
 \subfile{abstracts/12371224.tex}
 \subfile{abstracts/12371238.tex}
 
-\mysection{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part III}{We3B}
+\mysection{SS15: Mathematical Methods Towards Dealing with Uncertainty in Applied Sciences, part III}{We3B}{Chair: Irina Perfilieva}
 \subfile{abstracts/12371794.tex}
 \subfile{abstracts/12371808.tex}
 
 
-\mysection{Text Analysis and Processing}{We3C}
+\mysection{Text Analysis and Processing}{We3C}{Chair: Anna Wilbik}
 \subfile{abstracts/12370671.tex}
 \subfile{abstracts/12370684.tex}
 \subfile{abstracts/12370698.tex}
 \subfile{abstracts/12370710.tex}
-\mysection{SS17: Interval Uncertainty, part I}{We3D}
+\mysection{SS17: Interval Uncertainty, part I}{We3D}{Chair: Vladik Kreinovich}
 \subfile{abstracts/12371881.tex}
 \subfile{abstracts/12371895.tex}
 \subfile{abstracts/12371936.tex}
@@ -510,15 +514,15 @@ Ronald R. YAGER
 
 \mychapter{Thursday, June 18 -- Parallel Session 1}
 
-\mysection{SS8: Fuzzy methods in Data Mining and Knowledge Discovery}{Th1A}
+\mysection{SS8: Fuzzy methods in Data Mining and Knowledge Discovery}{Th1A}{Chair: Karel Gutiérrez Batista}
 \subfile{abstracts/12371313.tex}
 \subfile{abstracts/12371327.tex}
 \subfile{abstracts/12371341.tex}
-\mysection{SS9: Computational Intelligence for Logistics and Transportation Problems}{Th1C}
+\mysection{SS9: Computational Intelligence for Logistics and Transportation Problems, Part II}{Th1C}{Chair: David A. Pelta}
 \subfile{abstracts/12371390.tex}
 \subfile{abstracts/12371406.tex}
 \subfile{abstracts/12371420.tex}
-\mysection{SS17: Interval Uncertainty, part II}{Th1D}
+\mysection{SS17: Interval Uncertainty, part II}{Th1D}{Chair: Vladik Kreinovich}
 \subfile{abstracts/12371909.tex}
 \subfile{abstracts/12371950.tex}
 \subfile{abstracts/12371964.tex}
@@ -526,25 +530,25 @@ Ronald R. YAGER
 
 \mychapter{Thursday, June 18 -- Parallel Session 2}
 
-\mysection{Foundations and Mathematics}{Th2A}
+\mysection{Foundations and Mathematics}{Th2A}{Chair: Martin Stepnicka}
 \subfile{abstracts/12370061.tex}
 \subfile{abstracts/12370072.tex}
 \subfile{abstracts/12370082.tex}
 \subfile{abstracts/12370095.tex}
 \subfile{abstracts/12370109.tex}
-\mysection{SS3: Similarities in Artificial Intelligence}{Th2B}
+\mysection{SS3: Similarities in Artificial Intelligence}{Th2B}{Chair: Bernadette Bouchon-Meunier}
 \subfile{abstracts/12370001.tex}
 \subfile{abstracts/12370949.tex}
 \subfile{abstracts/12370958.tex}
 \subfile{abstracts/12370966.tex}
 \subfile{abstracts/12370977.tex}
-\mysection{Machine Learning, part II }{Th2C}
+\mysection{Machine Learning, part II }{Th2C}{Chair: Thomas Runkler}
 \subfile{abstracts/12370481.tex}
 \subfile{abstracts/12370495.tex}
 \subfile{abstracts/12370509.tex}
 \subfile{abstracts/12370522.tex}
 \subfile{abstracts/12370536.tex}
-\mysection{SS4: Belief Function Theory and its Applications, part I}{Th2D}
+\mysection{SS4: Belief Function Theory and its Applications, part I}{Th2D}{Chair: Reda Boukezzoula}
 \subfile{abstracts/12370989.tex}
 \subfile{abstracts/12371003.tex}
 \subfile{abstracts/12371017.tex}
@@ -554,26 +558,27 @@ Ronald R. YAGER
 
 \mychapter{Thursday, June 18 -- Parallel Session 3}
 
-\mysection{SS1: Fuzzy Interval Analysis}{Th3A}
+\mysection{SS1: Fuzzy Interval Analysis}{Th3A}{Chair: Weldon Lodwick}
 \subfile{abstracts/12370724.tex}
 \subfile{abstracts/12370734.tex}
 \subfile{abstracts/12370748.tex}
 \subfile{abstracts/12370762.tex}
-\mysection{SS14: Fuzzy and Generalized Quantifier Theory}{Th3B}
+\mysection{SS14: Fuzzy and Generalized Quantifier Theory}{Th3B}{Chair: Petra Murinova}
 \subfile{abstracts/12371609.tex}
 \subfile{abstracts/12371623.tex}
 \subfile{abstracts/12371637.tex}
 \subfile{abstracts/12371651.tex}
-\mysection{SS23: Computational Intelligence Methods in Information Modelling, Representation and Processing}{Th3C}
+\mysection{SS23: Computational Intelligence Methods in Information Modelling, Representation and Processing}{Th3C}{Chair: Janusz Kacprzyk}
 \subfile{abstracts/12372229.tex}
 \subfile{abstracts/12372243.tex}
 \subfile{abstracts/12372256.tex}
 \subfile{abstracts/12372270.tex}
-\mysection{SS4: Belief Function Theory and its Applications, part II}{Th3D}
+\mysection{SS4: Belief Function Theory and its Applications, part II}{Th3D}{Chair: Didier Coquin}
 \subfile{abstracts/12371059.tex}
 \subfile{abstracts/12371073.tex}
 \subfile{abstracts/12371087.tex}
 \subfile{abstracts/12371099.tex}
+
 
 \backmatter
 \printindex[authors]
