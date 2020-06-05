@@ -27,17 +27,21 @@ def extract_abstract(tex):
         return ""
 
 def index_info(authors):
-    res = [a.rsplit(maxsplit=1) for a in re.split(r",| and ", authors)]
+    res = [a.rsplit(maxsplit=1) for a in re.split(r", ?| and ", authors)]
     idxinfo = " ".join(["\index[authors]{%s, %s}"%(ln, fn) for (fn,ln) in res])
     return idxinfo
+
+def clean_abstract(abstract):
+    res = re.sub(r"\\cite.?{[^}]+}", "[REF]", abstract)
+    return res
 
 def get_latex(template, title, authors, abstract):
     # Process authors for the index
     template = re.sub("__TITLE__", lambda x: title, template)
     template = re.sub("__AUTHORS__", lambda x: authors, template)
-    template = re.sub("__INDEXINFO__", index_info(authors), template)
+    template = re.sub("__INDEXINFO__", lambda x: index_info(authors), template)
     # the following avoids interpreting escaped chars in the abstract, such as \and
-    template = re.sub("__ABSTRACT__", lambda x: abstract, template)
+    template = re.sub("__ABSTRACT__", lambda x: clean_abstract(abstract), template)
     return template
 
 if __name__ == "__main__":
