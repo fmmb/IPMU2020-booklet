@@ -32,7 +32,11 @@ def index_info(authors):
     return idxinfo
 
 def clean_abstract(abstract):
-    res = re.sub(r"\\cite.?{[^}]+}", "[REF]", abstract)
+    abstract = re.sub(r"\\cite.?{[^}]+}", "[REF]", abstract)
+    res = re.sub(r"(\\keywords{[^}]+?)\s*\\and\s+([^}]+})", r"\1, \2", abstract, re.S)
+    while res != abstract:
+        abstract = res
+        res = re.sub(r"(\\keywords{[^}]+?)\s*\\and\s+([^}]+})", r"\1, \2", abstract, re.S)
     return res
 
 def get_latex(template, title, authors, abstract):
