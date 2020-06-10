@@ -7,7 +7,7 @@
 
 %\usepackage{bera}
 \usepackage{fancyhdr}
-\usepackage[Bjornstrup]{fncychap}
+%\usepackage[Bjornstrup]{fncychap}
 
 \pagestyle{plain}
 
@@ -62,7 +62,7 @@
 \setcounter{secnumdepth}{0}
 \setcounter{tocdepth}{2}
 
-% Chapter and Section formats 
+% Chapter and section formats 
 \usepackage{titlesec}
 
 %\titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}   
@@ -75,19 +75,17 @@
 
 \newcommand{\colorsection}[1]{%
   \colorbox{black!15}{\parbox[c][1.5cm]{\dimexpr\textwidth-2\fboxsep}{\begin{center}#1\end{center}}}}
-
 \titleformat{name=\section}[block]{\sffamily\bfseries\Large}{}{0pt}{\colorsection}  
-
 \newcommand{\mysection}[3]{%
 	\hypertarget{#2}{}\section[#1\\ \normalfont \small \textit{#3}]{#1}\label{#2}
 	\begin{center}#3\end{center}%
 }
 
-%\newcommand{\colorchapter}[1]{%
-%  \colorbox{blue!15}{\parbox[b][2.5cm]{\dimexpr\textwidth-2\fboxsep}{\begin{flushright}#1\end{flushright}\vspace{6pt}}}}
-
-%\titleformat{name=\chapter}[block]{\sffamily\bfseries\Large}{}{0pt}{\colorchapter}  
+\newcommand{\colorchapter}[1]{%
+  \colorbox{black!15}{\parbox[b][2.5cm]{\dimexpr\textwidth-2\fboxsep}{\begin{flushright}#1\,\,\,\end{flushright}\vspace{12pt}}}}
+\titleformat{name=\chapter}[block]{\sffamily\bfseries\Large}{}{0pt}{\colorchapter}  
 %\titlespacing*{\chapter}{0pt}{\baselineskip}{40pt}
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
 
 \newcommand{\mychapter}[1]{
     	\phantomsection
@@ -139,7 +137,7 @@
 \vspace{1em}
 Joao Paulo Carvalho,
 Marek Reformat, 
-Marie-Jeanne Lesot,
+Marie-Jeanne Lesot,\\
 Susana Vieira,
 and Fernando Batista\\
 \vspace{1em}
@@ -163,52 +161,66 @@ ISBN: xxx-xxx-xxxxxx
 
 \chapter*{The Organizing Committee}
 
-\vspace{-6ex}
-\subsubsection*{General Chair}\vspace{-2ex}
+\subsubsection*{General Chair}
 
 Joao Paulo Carvalho (Portugal)
 
-\subsubsection*{Program Chairs}\vspace{-2ex}
+\subsubsection*{Program Chairs}
 
 Marek Reformat (Canada)\\
 Marie-Jeanne Lesot (France)\\
 Susana Vieira (Portugal)
 
-\subsubsection*{Publication Chair}\vspace{-2ex}
+\subsubsection*{Publication Chair}
 
 Anna Wilbik (Netherlands)
 
-\subsubsection*{Special Session Chair}\vspace{-2ex}
+\subsubsection*{Special Session Chair}
 
 Uzay Kaymak (Netherlands)
 
-\subsubsection*{Sponsors and Publicity Chair}\vspace{-2ex}
+\subsubsection*{Sponsors and Publicity Chair}
 
 João M. C. Sousa (Portugal)
 
-\subsubsection*{Web Chair}\vspace{-2ex}
+\subsubsection*{Web Chair}
 
 Fernando Batista (Portugal)
 
-\subsubsection*{Executive directors}\vspace{-2ex}
+\subsubsection*{Executive directors}
 
 Bernadette BOUCHON-MEUNIER\\
 Ronald R. YAGER
 
 
-%\chapter{Welcome to IPMU 2020}
+\mychapter{Preface} % Welcome to IPMU 2020 
+\vspace{5em}
+
 %\input{misc/welcome.tex}
+We would like to welcome you to the 18th International Conference on Information Processing and Management of Uncertainty in Knowledge-Based Systems (IPMU 2020). This edition will undoubtedly be marked by the sad fact that, due to the COVID-19 pandemics, it will be the first, and hopefully the last, IPMU conference to be held online.
 
-%\chapter{List of venues}
-%\input{misc/venues.tex}
+Under normal circumstances, you would be in beautiful Lisbon, holding this volume in your hands, and looking for overall information regarding the local organization: where will the sessions be, where are the coffee-breaks, what to do in the surroundings, where to grab a coffee, a beer or a nice glass of wine with your friends after the sessions, where will be the Gala dinner... As it is, you are probably reading these lines on a computer screen at your home town, and none of those "not so little things" that bring us all together will be possible. Sad times indeed.
 
-%\chapter*{Program overview}
-%\addcontentsline{toc}{chapter}{Program overview}
+In this document you will find an overview of the IPMU 2020 program, the detailed program organized by sessions, including the respective Session Chairs, the list of the Plenary Talks and respective speakers, and the abstracts of all accepted papers. The document is fully linked in order to easily access the abstracts and facilitate the choice of the sessions to attend.    
 
-\mychapter{Program}
+The IPMU 2020 conference offers a versatile and comprehensive scientific program: Four invited talks given by distinguished researchers, Barbara Tversky (Stanford University and Columbia University, USA), who will receive the IPMU 2020 Kampé de Fériet Award, Luísa Coheur (INESC-ID / Instituto Superior Técnico, Universidade de Lisboa, Portugal), Jim Keller (University of Missouri, USA), and Björn Schuller (Imperial College London, UK); A special tribute to celebrate the life and achievements of Enrique Ruspini, one of Fuzzy Logic pioneers who passed away last year;  173 papers authored by researchers from 34 different countries distributed by 22 special sessions and several sessions on diverse uncertainty related topics. 
 
-%\section{Program overview}
-%\includegraphics[width=1\textwidth]{images/program_overview.pdf}
+
+The official webpage of IPMU 2020, \url{https://ipmu2020.inesc-id.pt/}, can be consulted for more information.
+
+Wish you all the best in these difficult times,\\
+Hope to see you in Lisbon in the near future,
+
+\vspace{1cm}
+
+\begin{flushleft}
+João Paulo Carvalho\\[1ex]
+IPMU2020 General-Chair 
+\end{flushleft}
+
+
+
+\mychapter{Program Overview}
 
 \subsubsection*{Monday, June 15}
 
