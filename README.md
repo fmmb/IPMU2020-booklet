@@ -14,7 +14,7 @@ Non-latex files must be processed manually. I stored them into `metadata/abstrac
 
 ## Generating TEX files for each abstract
 
-You have to create the file `subfile.template` that serves as a LaTeX template, and `metadata/toc.tsv`, containing information about each paper:
+You have to create the file `metadata/subfile.template` that serves as a LaTeX template, and `metadata/toc.tsv`, containing information about each paper:
 
 * `reference` (one for each abstract file name)
 * `title` paper title
