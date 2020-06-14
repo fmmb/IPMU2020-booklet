@@ -16,9 +16,9 @@ Non-latex files must be processed manually. I stored them into `metadata/abstrac
 
 You have to create the file `metadata/toc.tsv`, containing information about each paper:
 
-    * `reference` (one for each abstract file name)
-    * `title` paper title
-    * `authors` paper authors
+* `reference` (one for each abstract file name)
+* `title` paper title
+* `authors` paper authors
 
 The following command can be used to generate a TEX file for each abstract, based on the abstract content, previously extracted form the original TEX or manually provided.
 
