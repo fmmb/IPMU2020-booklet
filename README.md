@@ -28,3 +28,8 @@ The script also words with a single file
 
     ./scripts/meta2tex.py ./metadata/abstracts/12372005.tex
 
+
+Finally, `booklet.tex` generates the final PDF file.
+It should be adapted to use all the abstracts as subfiles. 
+
+Be prepared to mannually change some of these subfiles, since authors are very inventive :)
